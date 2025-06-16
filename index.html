@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,6 +9,22 @@
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="scss/style.css" />
   <style>
+    /* Ensure full height layout with sticky footer */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body > main {
+      flex: 1;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
     .hero {
       background: linear-gradient(to right, #007bff, #6610f2);
       color: white;
@@ -71,71 +87,73 @@
     </div>
   </nav>
 
-  <header class="hero text-center">
-    <div class="container">
-      <h1 id="typed-text" class="display-4 fw-bold mb-3"></h1>
-      <h3 class="fw-semibold">Hi, I'm Sarath</h3>
-      <p class="lead">A passionate web developer</p>
-    </div>
-  </header>
-
-  <section class="highlights py-5">
-    <div class="container">
-      <h2 class="text-center mb-4" data-aos="fade-down">Highlights</h2>
-      <div class="row text-center">
-        <div class="col-md-4 highlight-box mb-4" data-aos="zoom-in">
-          <i class="bi bi-folder-check mb-2"></i>
-          <h4>5+ Projects</h4>
-          <p>Built good looking web apps</p>
-        </div>
-        <div class="col-md-4 highlight-box mb-4" data-aos="zoom-in" data-aos-delay="100">
-          <i class="bi bi-people-fill mb-2"></i>
-          <h4>Team Player</h4>
-          <p>Collaborated with developers</p>
-        </div>
-        <div class="col-md-4 highlight-box mb-4" data-aos="zoom-in" data-aos-delay="200">
-          <i class="bi bi-lightning-charge-fill mb-2"></i>
-          <h4>Fast Learner</h4>
-          <p>Quickly adapts to new tech</p>
-        </div>
+  <main>
+    <header class="hero text-center">
+      <div class="container">
+        <h1 id="typed-text" class="display-4 fw-bold mb-3"></h1>
+        <h3 class="fw-semibold">Hi, I'm Sarath</h3>
+        <p class="lead">A passionate web developer</p>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <section class="cards py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4" data-aos="fade-up">Projects</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4" data-aos="fade-up">
-          <div class="card h-100 shadow">
-            <img src="images/todo.jpg" class="card-img-top" alt="Todo App">
-            <div class="card-body">
-              <h5 class="card-title">Todo App</h5>
-              <p class="card-text">A simple task manager to add, edit, delete and mark tasks as completed for daily productivity.</p>
-            </div>
+    <section class="highlights py-5">
+      <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-down">Highlights</h2>
+        <div class="row text-center">
+          <div class="col-md-4 highlight-box mb-4" data-aos="zoom-in">
+            <i class="bi bi-folder-check mb-2"></i>
+            <h4>5+ Projects</h4>
+            <p>Built good looking web apps</p>
           </div>
-        </div>
-        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100 shadow">
-            <img src="images/waterbill.png" class="card-img-top" alt="Water Billing">
-            <div class="card-body">
-              <h5 class="card-title">Water Billing</h5>
-              <p class="card-text">Calculates water consumption, generates bills, and provides usage history tracking.</p>
-            </div>
+          <div class="col-md-4 highlight-box mb-4" data-aos="zoom-in" data-aos-delay="100">
+            <i class="bi bi-people-fill mb-2"></i>
+            <h4>Team Player</h4>
+            <p>Collaborated with developers</p>
           </div>
-        </div>
-        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card h-100 shadow">
-            <img src="images/medicalshop.png" class="card-img-top" alt="Medical Shop">
-            <div class="card-body">
-              <h5 class="card-title">Medical Shop Management</h5>
-              <p class="card-text">Manages medicines, inventory, sales, and processes customer orders efficiently.</p>
-            </div>
+          <div class="col-md-4 highlight-box mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <i class="bi bi-lightning-charge-fill mb-2"></i>
+            <h4>Fast Learner</h4>
+            <p>Quickly adapts to new tech</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="cards py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-up">Projects</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="fade-up">
+            <div class="card h-100 shadow">
+              <img src="images/todo.jpg" class="card-img-top" alt="Todo App">
+              <div class="card-body">
+                <h5 class="card-title">Todo App</h5>
+                <p class="card-text">A simple task manager to add, edit, delete and mark tasks as completed for daily productivity.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 shadow">
+              <img src="images/waterbill.png" class="card-img-top" alt="Water Billing">
+              <div class="card-body">
+                <h5 class="card-title">Water Billing</h5>
+                <p class="card-text">Calculates water consumption, generates bills, and provides usage history tracking.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 shadow">
+              <img src="images/medicalshop.png" class="card-img-top" alt="Medical Shop">
+              <div class="card-body">
+                <h5 class="card-title">Medical Shop Management</h5>
+                <p class="card-text">Manages medicines, inventory, sales, and processes customer orders efficiently.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2025 MyPortfolio</p>
