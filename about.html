@@ -1,11 +1,18 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About - My Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="scss/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="scss/style.css" />
+  <style>
+    .card:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease;
+    }
+  </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
 
@@ -26,25 +33,95 @@
     </div>
   </nav>
 
-  <!-- Main Content -->
+  <!-- About Section -->
   <main class="flex-grow-1">
-    <section class="about py-5">
+    <section class="about py-5 bg-light">
       <div class="container text-center">
-        <img src="images/sarath.jpg" class="rounded-circle mb-4" width="150" alt="Profile" />
-        <h2> Sarath m</h2>
-        <p class="lead">WEB DEVELOPER |  FULLSTACK DEVELOPER</p>
-        <p>I am a passionate web developer with a focus on creating responsive and user-friendly websites.  
-             I am constantly learning and improving my skills to deliver high-quality projects that meet client needs and industry standards.</p>
+        <img src="images/sarath.jpg" class="rounded-circle mb-4 shadow" width="150" alt="Profile" />
+        <h2>Sarath M</h2>
+        <p class="lead">Web Developer | Fullstack Developer</p>
+        <p>
+          I am a passionate web developer with a focus on creating responsive and user-friendly websites.
+          I continuously learn and build full-stack projects using modern technologies to meet both client and industry standards.
+        </p>
+      </div>
+    </section>
+
+    <!-- Qualifications Section -->
+    <section class="py-5">
+      <div class="container">
+        <h3 class="text-center mb-4">Qualifications & Studies</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-4 d-flex">
+            <div class="card shadow-sm mb-3 h-100 w-100">
+              <div class="card-body text-center">
+                <i class="bi bi-mortarboard-fill display-5 text-primary mb-3"></i>
+                <h5 class="card-title">B.Tech in Electrical Engineering</h5>
+                <p class="card-text">Completed from XYZ College, Kerala (2018–2022)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex">
+            <div class="card shadow-sm mb-3 h-100 w-100">
+              <div class="card-body text-center">
+                <i class="bi bi-mortarboard-fill display-5 text-primary mb-3"></i>
+                <h5 class="card-title">MERN Stack Development</h5>
+                <p class="card-text">Built full-stack apps using MongoDB, Express, React, and Node.js. Self-taught and project-based learning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills py-5 bg-light">
+      <div class="container">
+        <h3 class="text-center mb-4">My Skills</h3>
+        <div class="row text-center">
+          <div class="col-md-3 mb-3">
+            <i class="bi bi-filetype-html display-5 text-danger mb-2"></i>
+            <h6>HTML5</h6>
+          </div>
+          <div class="col-md-3 mb-3">
+            <i class="bi bi-filetype-css display-5 text-primary mb-2"></i>
+            <h6>CSS3</h6>
+          </div>
+          <div class="col-md-3 mb-3">
+            <i class="bi bi-filetype-js display-5 text-warning mb-2"></i>
+            <h6>JavaScript</h6>
+          </div>
+          <div class="col-md-3 mb-3">
+            <i class="bi bi-react display-5 text-info mb-2"></i>
+            <h6>React</h6>
+          </div>
+          <div class="col-md-3 mb-3">
+            <i class="bi bi-node-plus-fill display-5 text-success mb-2"></i>
+            <h6>Node.js</h6>
+          </div>
+          <div class="col-md-3 mb-3">
+            <i class="bi bi-database-fill-check display-5 text-secondary mb-2"></i>
+            <h6>MongoDB</h6>
+          </div>
+          <div class="col-md-3 mb-3">
+            <i class="bi bi-bootstrap-fill display-5 text-purple mb-2"></i>
+            <h6>Bootstrap</h6>
+          </div>
+          <div class="col-md-3 mb-3">
+            <i class="bi bi-git display-5 text-dark mb-2"></i>
+            <h6>Git & GitHub</h6>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
     <p>&copy; 2025 MyPortfolio</p>
   </footer>
 
-  <!-- Bootstrap JS (optional for navbar toggle) -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
